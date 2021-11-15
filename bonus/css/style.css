@@ -78,7 +78,9 @@ header {
 .buttons_list{
     top: 12.5%;
 }
-
+.main_menu_list{
+    max-width: 50%;
+}
 .arial{
     font-family: 'Arial', sans-serif;
 }
