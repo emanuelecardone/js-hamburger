@@ -138,6 +138,9 @@ header {
     font-size: 35px;
     text-decoration: none;
 }
+main{
+    height: calc(100vh - 120px);
+}
 @media screen and (max-width: 1000px)
 {
     .header-right ul {

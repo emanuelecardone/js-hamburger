@@ -5,7 +5,12 @@ const appearingMenu = document.querySelector('.hamburger-menu');
 const burgerTool = document.querySelector('.header-right .fa-bars');
 
 burgerTool.addEventListener('click', function(){
-    appearingMenu.classList.add('active');
+    appearingMenu.classList.add('active');    
+
+    // Variabile per sezione Discover Class
+    const discoverPage = document.querySelector('.discover_class_wrapper');
+    discoverPage.classList.add('d-none');
+
     // SEZIONE EDIT
 
     // Creo la variabile del tasto per aprire il box contenente i vari edit, dei box stessi e del tasto che li chiuderà
@@ -607,7 +612,21 @@ burgerTool.addEventListener('click', function(){
         appearingBoxCloseButton3.classList.remove('border-light');
         appearingMenu.classList.remove('bg-primary','bg-secondary','bg-success','bg-danger','bg-warning','bg-info','bg-light','bg-dark');
     });
+
+
+    // DISCOVER CLASS
+
+    // Variabile per la comparsa pagina pulsante
+    const discoverPageButton = document.querySelector('.discover_button');
+
+    // Comparsa pagina 
+    discoverPageButton.addEventListener('click', function(){
+        discoverPage.classList.remove('d-none');
+        appearingMenu.classList.remove('active');
+    });
+
 });
+
 
 // Tasto x
 const closeTool = document.querySelector('.hamburger-menu .close');
