@@ -209,96 +209,109 @@ georgia.addEventListener('click', function(){
 // Sezione cambio colore font
 
 // Creo la variabile per ogni font color marker
+const primaryText = document.querySelector('.border-primary');
+const secondaryText = document.querySelector('.border-secondary');
+const successText = document.querySelector('.border-success');
+const dangerText = document.querySelector('.border-danger');
+const warningText = document.querySelector('.border-warning');
+const infoText = document.querySelector('.b_info');
+const lightText = document.querySelector('.border-light');
+const darkText = document.querySelector('.border-dark');
+const purpleText = document.querySelector('.purple_icon');
 
 
 // Cambio colore font
-arial.addEventListener('click', function(){
-    editedText1.classList.add('arial');
-    editedText2.classList.add('arial');
-    editedText3.classList.add('arial');
-    editedText4.classList.add('arial');
-    editedText1.classList.remove('arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText2.classList.remove('arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText3.classList.remove('arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText4.classList.remove('arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
+primaryText.addEventListener('click', function(){
+    editedText1.classList.add('text-primary','border-primary');
+    editedText2.classList.add('text-primary','border-primary');
+    editedText3.classList.add('text-primary','border-primary');
+    editedText4.classList.add('text-primary','border-primary');
+    editedText1.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText2.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText3.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText4.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
 });
-arialBlack.addEventListener('click', function(){
-    editedText1.classList.add('arial-black');
-    editedText2.classList.add('arial-black');
-    editedText3.classList.add('arial-black');
-    editedText4.classList.add('arial-black');
-    editedText1.classList.remove('arial','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText2.classList.remove('arial','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText3.classList.remove('arial','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText4.classList.remove('arial','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
+secondaryText.addEventListener('click', function(){
+    editedText1.classList.add('text-secondary','border-secondary');
+    editedText2.classList.add('text-secondary','border-secondary');
+    editedText3.classList.add('text-secondary','border-secondary');
+    editedText4.classList.add('text-secondary','border-secondary');
+    editedText1.classList.remove('text-primary','border-primary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText2.classList.remove('text-primary','border-primary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText3.classList.remove('text-primary','border-primary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText4.classList.remove('text-primary','border-primary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
 });
-verdana.addEventListener('click', function(){
-    editedText1.classList.add('verdana');
-    editedText2.classList.add('verdana');
-    editedText3.classList.add('verdana');
-    editedText4.classList.add('verdana');
-    editedText1.classList.remove('arial','arial-black','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText2.classList.remove('arial','arial-black','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText3.classList.remove('arial','arial-black','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText4.classList.remove('arial','arial-black','tahoma','trebuchet-ms','impact','times-new-roman','didot','georgia');
+successText.addEventListener('click', function(){
+    editedText1.classList.add('text-success','border-success');
+    editedText2.classList.add('text-success','border-success');
+    editedText3.classList.add('text-success','border-success');
+    editedText4.classList.add('text-success','border-success');
+    editedText1.classList.remove('text-secondary','border-secondary','text-primary','border-primary','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText2.classList.remove('text-secondary','border-secondary','text-primary','border-primary','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText3.classList.remove('text-secondary','border-secondary','text-primary','border-primary','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText4.classList.remove('text-secondary','border-secondary','text-primary','border-primary','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
 });
-tahoma.addEventListener('click', function(){
-    editedText1.classList.add('tahoma');
-    editedText2.classList.add('tahoma');
-    editedText3.classList.add('tahoma');
-    editedText4.classList.add('tahoma');
-    editedText1.classList.remove('arial','arial-black','verdana','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText2.classList.remove('arial','arial-black','verdana','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText3.classList.remove('arial','arial-black','verdana','trebuchet-ms','impact','times-new-roman','didot','georgia');
-    editedText4.classList.remove('arial','arial-black','verdana','trebuchet-ms','impact','times-new-roman','didot','georgia');
+dangerText.addEventListener('click', function(){
+    editedText1.classList.add('text-danger','border-danger');
+    editedText2.classList.add('text-danger','border-danger');
+    editedText3.classList.add('text-danger','border-danger');
+    editedText4.classList.add('text-danger','border-danger');
+    editedText1.classList.remove('text-secondary','border-secondary','text-success','border-success','text-primary','border-primary','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText2.classList.remove('text-secondary','border-secondary','text-success','border-success','text-primary','border-primary','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText3.classList.remove('text-secondary','border-secondary','text-success','border-success','text-primary','border-primary','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText4.classList.remove('text-secondary','border-secondary','text-success','border-success','text-primary','border-primary','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark');
 });
-trebuchetMs.addEventListener('click', function(){
-    editedText1.classList.add('trebuchet-ms');
-    editedText2.classList.add('trebuchet-ms');
-    editedText3.classList.add('trebuchet-ms');
-    editedText4.classList.add('trebuchet-ms');
-    editedText1.classList.remove('arial','arial-black','verdana','tahoma','impact','times-new-roman','didot','georgia');
-    editedText2.classList.remove('arial','arial-black','verdana','tahoma','impact','times-new-roman','didot','georgia');
-    editedText3.classList.remove('arial','arial-black','verdana','tahoma','impact','times-new-roman','didot','georgia');
-    editedText4.classList.remove('arial','arial-black','verdana','tahoma','impact','times-new-roman','didot','georgia');
+warningText.addEventListener('click', function(){
+    editedText1.classList.add('text-warning','border-warning');
+    editedText2.classList.add('text-warning','border-warning');
+    editedText3.classList.add('text-warning','border-warning');
+    editedText4.classList.add('text-warning','border-warning');
+    editedText1.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-primary','border-primary','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText2.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-primary','border-primary','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText3.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-primary','border-primary','text-info','border-info','text-light','border-light','text-dark','border-dark');
+    editedText4.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-primary','border-primary','text-info','border-info','text-light','border-light','text-dark','border-dark');
 });
-impact.addEventListener('click', function(){
-    editedText1.classList.add('impact');
-    editedText2.classList.add('impact');
-    editedText3.classList.add('impact');
-    editedText4.classList.add('impact');
-    editedText1.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','times-new-roman','didot','georgia');
-    editedText2.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','times-new-roman','didot','georgia');
-    editedText3.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','times-new-roman','didot','georgia');
-    editedText4.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','times-new-roman','didot','georgia');
+infoText.addEventListener('click', function(){
+    editedText1.classList.add('text-info','border-info');
+    editedText2.classList.add('text-info','border-info');
+    editedText3.classList.add('text-info','border-info');
+    editedText4.classList.add('text-info','border-info');
+    editedText1.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-primary','border-primary','text-warning','border-warning','text-light','border-light','text-dark','border-dark');
+    editedText2.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-primary','border-primary','text-warning','border-warning','text-light','border-light','text-dark','border-dark');
+    editedText3.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-primary','border-primary','text-warning','border-warning','text-light','border-light','text-dark','border-dark');
+    editedText4.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-primary','border-primary','text-warning','border-warning','text-light','border-light','text-dark','border-dark');
 });
-timesNewRoman.addEventListener('click', function(){
-    editedText1.classList.add('times-new-roman');
-    editedText2.classList.add('times-new-roman');
-    editedText3.classList.add('times-new-roman');
-    editedText4.classList.add('times-new-roman');
-    editedText1.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','didot','georgia');
-    editedText2.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','didot','georgia');
-    editedText3.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','didot','georgia');
-    editedText4.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','didot','georgia');
+lightText.addEventListener('click', function(){
+    editedText1.classList.add('text-light','border-light');
+    editedText2.classList.add('text-light','border-light');
+    editedText3.classList.add('text-light','border-light');
+    editedText4.classList.add('text-light','border-light');
+    editedText1.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-primary','border-primary','text-dark','border-dark');
+    editedText2.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-primary','border-primary','text-dark','border-dark');
+    editedText3.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-primary','border-primary','text-dark','border-dark');
+    editedText4.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-primary','border-primary','text-dark','border-dark');
 });
-didot.addEventListener('click', function(){
-    editedText1.classList.add('didot');
-    editedText2.classList.add('didot');
-    editedText3.classList.add('didot');
-    editedText4.classList.add('didot');
-    editedText1.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','georgia');
-    editedText2.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','georgia');
-    editedText3.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','georgia');
-    editedText4.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','georgia');
+darkText.addEventListener('click', function(){
+    editedText1.classList.add('text-dark','border-dark');
+    editedText2.classList.add('text-dark','border-dark');
+    editedText3.classList.add('text-dark','border-dark');
+    editedText4.classList.add('text-dark','border-dark');
+    editedText1.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-primary','border-primary');
+    editedText2.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-primary','border-primary');
+    editedText3.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-primary','border-primary');
+    editedText4.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-primary','border-primary');
 });
-georgia.addEventListener('click', function(){
-    editedText1.classList.add('georgia');
-    editedText2.classList.add('georgia');
-    editedText3.classList.add('georgia');
-    editedText4.classList.add('georgia');
-    editedText1.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot');
-    editedText2.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot');
-    editedText3.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot');
-    editedText4.classList.remove('arial','arial-black','verdana','tahoma','trebuchet-ms','impact','times-new-roman','didot');
+purpleText.addEventListener('click', function(){
+    editedText1.style.color = '#6f42c1';
+    editedText2.style.color = '#6f42c1';
+    editedText3.style.color = '#6f42c1';
+    editedText4.style.color = '#6f42c1';
+    editedText1.style.borderColor = '#6f42c1';
+    editedText2.style.borderColor = '#6f42c1';
+    editedText3.style.borderColor = '#6f42c1';
+    editedText4.style.borderColor = '#6f42c1';
+    editedText1.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark','text-primary','border-primary');
+    editedText2.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark','text-primary','border-primary');
+    editedText3.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark','text-primary','border-primary');
+    editedText4.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark','text-primary','border-primary');
 });
