@@ -76,7 +76,43 @@ header {
     border-bottom: 2px solid white;
 }
 .buttons_list{
-    top: 37.5%;
+    top: 12.5%;
+}
+
+.arial{
+    font-family: 'Arial', sans-serif;
+}
+
+.arial-black{
+    font-family: 'Arial-Black', sans-serif;
+}
+
+.verdana{
+    font-family: 'Verdana', sans-serif;
+}
+
+.tahoma{
+    font-family: 'Tahoma', sans-serif;
+}
+
+.trebuchet-ms{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.impact{
+    font-family: 'Impact', sans-serif;
+}
+
+.times-new-roman{
+    font-family: 'Times New Roman', serif;
+}
+
+.didot{
+    font-family: 'Didot', serif;
+}
+
+.georgia{
+    font-family: 'Georgia', serif;
 }
 .close {
     display: block;
