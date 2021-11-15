@@ -315,3 +315,57 @@ purpleText.addEventListener('click', function(){
     editedText3.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark','text-primary','border-primary');
     editedText4.classList.remove('text-secondary','border-secondary','text-success','border-success','text-danger','border-danger','text-warning','border-warning','text-info','border-info','text-light','border-light','text-dark','border-dark','text-primary','border-primary');
 });
+
+
+
+// Sezione cambio colore sfondo
+
+// Creo la variabile per ogni bg color marker
+const primaryBg = document.querySelector('.border-primary.rounded-circle');
+const secondaryBg = document.querySelector('.border-secondary.rounded-circle');
+const successBg = document.querySelector('.border-success.rounded-circle');
+const dangerBg = document.querySelector('.border-danger.rounded-circle');
+const warningBg = document.querySelector('.border-warning.rounded-circle');
+const infoBg = document.querySelector('.b_info.rounded-circle');
+const lightBg = document.querySelector('.border-light.rounded-circle');
+const darkBg = document.querySelector('.border-dark.rounded-circle');
+const purpleBg = document.querySelector('.purple_icon.rounded-circle');
+
+
+// Cambio colore sfondo
+primaryBg.addEventListener('click', function(){
+    appearingMenu.classList.add('bg-primary');
+    appearingMenu.classList.remove('bg-secondary','bg-success','bg-danger','bg-warning','bg-info','bg-light','bg-dark');
+});
+secondaryBg.addEventListener('click', function(){
+    appearingMenu.classList.add('bg-secondary');
+    appearingMenu.classList.remove('bg-primary','bg-success','bg-danger','bg-warning','bg-info','bg-light','bg-dark');
+});
+successBg.addEventListener('click', function(){
+    appearingMenu.classList.add('bg-success');
+    appearingMenu.classList.remove('bg-secondary','bg-primary','bg-danger','bg-warning','bg-info','bg-light','bg-dark'); 
+});
+dangerBg.addEventListener('click', function(){
+    appearingMenu.classList.add('bg-danger');
+    appearingMenu.classList.remove('bg-secondary','bg-success','bg-primary','bg-warning','bg-info','bg-light','bg-dark'); 
+});
+warningBg.addEventListener('click', function(){
+    appearingMenu.classList.add('bg-warning');
+    appearingMenu.classList.remove('bg-secondary','bg-success','bg-danger','bg-primary','bg-info','bg-light','bg-dark');   
+});
+infoBg.addEventListener('click', function(){
+    appearingMenu.classList.add('bg-info');
+    appearingMenu.classList.remove('bg-secondary','bg-success','bg-danger','bg-warning','bg-primary','bg-light','bg-dark');  
+});
+lightBg.addEventListener('click', function(){
+    appearingMenu.classList.add('bg-light');
+    appearingMenu.classList.remove('bg-secondary','bg-success','bg-danger','bg-warning','bg-info','bg-primary','bg-dark'); 
+});
+darkBg.addEventListener('click', function(){
+    appearingMenu.classList.add('bg-dark');
+    appearingMenu.classList.remove('bg-secondary','bg-success','bg-danger','bg-warning','bg-info','bg-light','bg-primary');
+});
+purpleBg.addEventListener('click', function(){
+    appearingMenu.style.backgroundColor = '#6f42c1';
+    appearingMenu.classList.remove('bg-primary','bg-secondary','bg-success','bg-danger','bg-warning','bg-info','bg-light','bg-dark');
+});

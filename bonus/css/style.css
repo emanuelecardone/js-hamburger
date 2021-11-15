@@ -124,6 +124,9 @@ header {
 .border_purple{
     border-color: #6f42c1;
 }
+.bg_box{
+    background-color: lightblue;
+}
 .close {
     display: block;
     position: absolute;
