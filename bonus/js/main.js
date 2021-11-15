@@ -4,12 +4,24 @@ const appearingMenu = document.querySelector('.hamburger-menu');
 // Hamburger menu
 const burgerTool = document.querySelector('.header-right .fa-bars');
 
-burgerTool.addEventListener('click', function(){
-    appearingMenu.classList.add('active');    
+// Variabile per sezione Discover Class
+const discoverPage = document.querySelector('.discover_class_wrapper');
 
-    // Variabile per sezione Discover Class
-    const discoverPage = document.querySelector('.discover_class_wrapper');
+burgerTool.addEventListener('click', function(){
+    appearingMenu.classList.add('active');   
+    
+    // DISCOVER CLASS
     discoverPage.classList.add('d-none');
+
+    // Variabile per la comparsa pagina pulsante
+    const discoverPageButton = document.querySelector('.discover_button');
+
+    // Comparsa pagina 
+    discoverPageButton.addEventListener('click', function(){
+        discoverPage.classList.remove('d-none');
+        appearingMenu.classList.remove('active');
+    });
+
 
     // SEZIONE EDIT
 
@@ -612,21 +624,13 @@ burgerTool.addEventListener('click', function(){
         appearingBoxCloseButton3.classList.remove('border-light');
         appearingMenu.classList.remove('bg-primary','bg-secondary','bg-success','bg-danger','bg-warning','bg-info','bg-light','bg-dark');
     });
-
-
-    // DISCOVER CLASS
-
-    // Variabile per la comparsa pagina pulsante
-    const discoverPageButton = document.querySelector('.discover_button');
-
-    // Comparsa pagina 
-    discoverPageButton.addEventListener('click', function(){
-        discoverPage.classList.remove('d-none');
-        appearingMenu.classList.remove('active');
-    });
-
 });
 
+// Tasto sezione Discover Class per lg +
+const discoverPageButton2 = document.querySelector('.discover_button_2');
+discoverPageButton2.addEventListener('click', function(){
+    discoverPage.classList.remove('d-none');
+});
 
 // Tasto x
 const closeTool = document.querySelector('.hamburger-menu .close');
