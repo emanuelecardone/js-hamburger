@@ -22,11 +22,16 @@ userSubmit.addEventListener('click', function(){
     // Risultati iscrizione
     const subscribeResults = document.querySelector('.subscription_results_wrapper');
 
-    subscribeResults.classList.remove('d-none');
-    document.querySelector('.username_form_result').innerHTML = userName.value;
-    document.querySelector('.age_form_result').innerHTML = userAge.value;
-    document.querySelector('.email_form_result').innerHTML = userEmail.value;
-    document.querySelector('.password_form_result').innerHTML = userPassword.value;
+    if(userName.value !== '' && userAge.value !== '' && userEmail.value !== '' && userPassword.value !== ''){
+        subscribeResults.classList.remove('d-none');
+        document.querySelector('.username_form_result').innerHTML = userName.value;
+        document.querySelector('.age_form_result').innerHTML = userAge.value;
+        document.querySelector('.email_form_result').innerHTML = userEmail.value;
+        document.querySelector('.password_form_result').innerHTML = userPassword.value;
+    } else{
+        alert(`Non puoi inserire campi vuoti`);
+    }
+    
 });
 
 
