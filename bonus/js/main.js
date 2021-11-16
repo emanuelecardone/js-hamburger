@@ -2,7 +2,7 @@
 const appearingMenu = document.querySelector('.hamburger-menu');
 
 // Hamburger menu
-const burgerTool = document.querySelector('.header-right .fa-bars');
+const burgerTool = document.querySelector('.header-right .open');
 
 // Variabile per sezione Discover Class
 const discoverPage = document.querySelector('.discover_class_wrapper');
@@ -19,6 +19,7 @@ const userSubmit = document.querySelector('.submit_form');
 
 userSubmit.addEventListener('click', function(){
 
+    // Risultati iscrizione
     const subscribeResults = document.querySelector('.subscription_results_wrapper');
 
     subscribeResults.classList.remove('d-none');

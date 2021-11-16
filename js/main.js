@@ -2,7 +2,7 @@
 const appearingMenu = document.querySelector('.hamburger-menu');
 
 // Hamburger menu
-const burgerTool = document.querySelector('.header-right .fa-bars');
+const burgerTool = document.querySelector('.header-right .open');
 
 burgerTool.addEventListener('click', function(){
     appearingMenu.classList.add('active');
