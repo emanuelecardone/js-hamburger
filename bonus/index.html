@@ -28,7 +28,7 @@
                     <li>
                         <a href="#">La nostra storia</a>
                     </li>
-                    <li>
+                    <li class="subscribe_button_2">
                         <a href="#" class="cta">Iscriviti</a>
                     </li>
                 </ul>
@@ -47,7 +47,7 @@
                     <li class="text-center bg_box link_box_3 p-3 rounded border border-5 border-info">
                         <a class="edited_text_3" href="#">La nostra storia</a>
                     </li>
-                    <li class="text-center bg_box link_box_4 p-3 rounded border border-5 border-info">
+                    <li class="text-center bg_box link_box_4 p-3 rounded border border-5 border-info subscribe_button">
                         <a href="#" class="cta edited_text_4">Iscriviti</a>
                     </li>
                 </ul>
@@ -246,23 +246,23 @@
                 </div>
             </div>
 
-            <div class="subscribe_wrapper py_80">
+            <div class="d-none subscribe_wrapper py_80">
                 <h2 class="fs_30 text-center text-uppercase mb_50">iscriviti</h2>
                 <div class="container">
                     <div class="row row-cols-1">
                         <div class="col">   
                             <div class="username_wrapper">
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                                    <label for="exampleInputText1" class="form-label">Username</label>
+                                    <input type="text" class="form-control username_form" id="exampleInputText1" aria-describedby="emailHelp">
                                 </div>                
                             </div>
                         </div>
                         <div class="col">
                             <div class="age_wrapper">
                                 <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Età</label>
-                                    <input type="number" class="form-control" id="exampleInputNumber1" aria-describedby="emailHelp">
+                                    <label for="exampleInputNumber1" class="form-label">Età</label>
+                                    <input type="number" class="form-control age_form" id="exampleInputNumber1" aria-describedby="emailHelp">
                                 </div>
                             </div>
                         </div>
@@ -270,7 +270,7 @@
                             <div class="email_wrapper">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Indirizzo email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="email" class="form-control email_form" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
                             </div>
                         </div>
@@ -278,24 +278,24 @@
                             <div class="password_wrapper">
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="password" class="form-control password_form" id="exampleInputPassword1">
                                     <div id="emailHelp" class="form-text">Non condivideremo mai la tua password.</div>
                                   </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="submit_wrapper">
-                                <button class="btn btn-primary">Submit</button>
+                                <button class="btn btn-primary submit_form">Submit</button>
                             </div>
                         </div>
                         <div class="col">
                             <div class="subscription_results_wrapper mt_100">
                                 <h2>Ti sei registrato! Ecco le tue credenziali:</h2>
                                 <ul class="results_list mt-5">
-                                    <li>Username: <span class="fw-bolder"></span></li>
-                                    <li>Età: <span class="fw-bolder"></span></li>
-                                    <li>Email: <span class="fw-bolder"></span></li>
-                                    <li>Password: <span class="fw-bolder"></span></li>
+                                    <li>Username: <span class="fw-bolder username_form_result ms-5"></span></li>
+                                    <li>Età: <span class="fw-bolder age_form_result ms-5"></span></li>
+                                    <li>Email: <span class="fw-bolder email_form_result ms-5"></span></li>
+                                    <li>Password: <span class="fw-bolder password_form_result ms-5"></span></li>
                                 </ul>
                             </div>
                         </div>

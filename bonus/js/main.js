@@ -7,6 +7,25 @@ const burgerTool = document.querySelector('.header-right .fa-bars');
 // Variabile per sezione Discover Class
 const discoverPage = document.querySelector('.discover_class_wrapper');
 
+// Variabile per sezione Subscribe
+const subscribePage = document.querySelector('.subscribe_wrapper');
+
+// Forms sezione Subscribe
+const userName = document.querySelector('.username_form');
+const userAge = document.querySelector('.age_form');
+const userEmail = document.querySelector('.email_form');
+const userPassword = document.querySelector('.password_form');
+const userSubmit = document.querySelector('.submit_form');
+
+userSubmit.addEventListener('click', function(){
+
+    document.querySelector('.username_form_result').innerHTML = userName.value;
+    document.querySelector('.age_form_result').innerHTML = userAge.value.toString();
+    document.querySelector('.email_form_result').innerHTML = userEmail.value;
+    document.querySelector('.password_form_result').innerHTML = userPassword.value;
+});
+
+
 burgerTool.addEventListener('click', function(){
     appearingMenu.classList.add('active');   
     
@@ -19,6 +38,21 @@ burgerTool.addEventListener('click', function(){
     // Comparsa pagina 
     discoverPageButton.addEventListener('click', function(){
         discoverPage.classList.remove('d-none');
+        subscribePage.classList.add('d-none');
+        appearingMenu.classList.remove('active');
+    });
+
+
+    // SUBSCRIBE
+    subscribePage.classList.add('d-none');
+
+    // Variabile per la comparsa pagina pulsante
+    const subscribePageButton = document.querySelector('.subscribe_button');
+
+    // Comparsa pagina 
+    subscribePageButton.addEventListener('click', function(){
+        subscribePage.classList.remove('d-none');
+        discoverPage.classList.add('d-none');
         appearingMenu.classList.remove('active');
     });
 
@@ -630,6 +664,14 @@ burgerTool.addEventListener('click', function(){
 const discoverPageButton2 = document.querySelector('.discover_button_2');
 discoverPageButton2.addEventListener('click', function(){
     discoverPage.classList.remove('d-none');
+    subscribePage.classList.add('d-none');
+});
+
+// Tasto sezione Subscribe per lg +
+const subscribePageButton2 = document.querySelector('.subscribe_button_2');
+subscribePageButton2.addEventListener('click', function(){
+    subscribePage.classList.remove('d-none');
+    discoverPage.classList.add('d-none');
 });
 
 // Tasto x
