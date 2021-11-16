@@ -19,6 +19,9 @@ const userSubmit = document.querySelector('.submit_form');
 
 userSubmit.addEventListener('click', function(){
 
+    const subscribeResults = document.querySelector('.subscription_results_wrapper');
+
+    subscribeResults.classList.remove('d-none');
     document.querySelector('.username_form_result').innerHTML = userName.value;
     document.querySelector('.age_form_result').innerHTML = userAge.value.toString();
     document.querySelector('.email_form_result').innerHTML = userEmail.value;
