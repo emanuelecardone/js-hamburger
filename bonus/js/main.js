@@ -24,7 +24,7 @@ userSubmit.addEventListener('click', function(){
 
     subscribeResults.classList.remove('d-none');
     document.querySelector('.username_form_result').innerHTML = userName.value;
-    document.querySelector('.age_form_result').innerHTML = userAge.value.toString();
+    document.querySelector('.age_form_result').innerHTML = userAge.value;
     document.querySelector('.email_form_result').innerHTML = userEmail.value;
     document.querySelector('.password_form_result').innerHTML = userPassword.value;
 });
