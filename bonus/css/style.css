@@ -141,6 +141,15 @@ header {
 main{
     height: calc(100vh - 120px);
 }
+.results_list{
+    list-style-type: none;
+}
+.results_list li{
+    line-height: 50px;
+}
+.btn:focus{
+    box-shadow: none;
+}
 @media screen and (max-width: 1000px)
 {
     .header-right ul {
